@@ -21,3 +21,5 @@ In your`<WoW Install Folder>` you have / can create a folder named `Sound`. If y
   - Chopper
   - Gyrocopter
   - Mimiron's Head
+
+- [Wow Script Sounds 3.3.5](https://github.com/telkar-rg/wow-ChangeAnnoyingWowSounds/releases/download/r2/Wow.Script.Sounds.3.3.5.zip): txt-list of all sound files
