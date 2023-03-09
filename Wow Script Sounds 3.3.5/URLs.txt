@@ -1,0 +1,11 @@
+# MPQ Extractor
+http://www.devklog.net/2007/02/09/mpq-extractor-10/
+
+# Information on the API Called used to play the files
+http://www.wowwiki.com/API_PlaySoundFile
+
+# Other MPQ links
+
+http://phrozenkeep.planetdiablo.gamespy.com/forum/viewtopic.php?t=49123
+http://www.staredit.net/maplantis/index.php?sid=f1b83bb98e;wiki=5#wiki_43
+http://www.zezula.net/en/mpq/download.html#Listfiles

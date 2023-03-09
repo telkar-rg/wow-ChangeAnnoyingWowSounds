@@ -1,0 +1,69 @@
+How to replicate what I've done ===============================
+
+Here's how I made this file. Please note many of the tools I used are on
+the Mac but I'm sure you can take the basic concepts and figure out what
+tools you need to use. I will also be using the Terminal on OS X ...not
+sure how to translate for the PC. Again the concepts should be the same.
+
+1) Get for your self a decent MPQ Extractor. I used MPQ Extractor as on
+the Mac I have not been successful in finding a MPQ listing utility
+(which would be better).
+
+2) Go into the World of Warcraft folder under the Data folder.
+
+3) Extract every mpq you find there. This may take a bit of time :D
+
+4) Make sure all this data you're extracting is outside the wow folders
+, just to make things neater. To be safe work on backups on the mpq
+files that you've made.
+
+5) Get everything organised into a single folder and do a listing where
+you get the full path for every file there. I did this in the OS X
+Terminal with the command "find * >~/desktop/output.txt". You should
+have a file with on each line a full path to a file encoded in the MPQ
+files somewhere.
+
+6) Remove the names and paths to each MPQ file. EG
+"common/sound/ambience/ghoststate.wav" becomes
+"sound/ambience/ghoststate.wav"
+
+7) Extract all lines containing .wav files , copying the result to a new
+file and deleting the matching lines in the orginal.
+
+8) Extract all lines containing .mp3 files, copying the result to a new
+file and deleting the matching lines in the orginal.
+
+9) Continue extacting all other file extensions until the original file
+has no lines in it. This is to ensure any new sound file extensions
+Blizzard starts to use aren't missed.
+
+10) Change everything to uppercase then Lowercase & Remove all
+duplicates. Be careful here as there is a lichking.mpq folder as well as
+a LichKing folder under /Sound/Creature that gets extracted and a few
+sounds with LichKing in their name.
+
+11) Merge both outputs together in one file
+
+12) Replace the slashes with double backslashes.
+"sound/ambience/ghoststate.wav" becomes
+"sound\\ambience\\ghoststate.wav"
+
+13) Prefix each line with /script PlaySoundFile("
+
+14) Suffix each line with ")
+
+15) Test Random strings 16) Send beta version off to my beta checker who
+will check for duplicates I've missed.
+
+Note that for steps 6 onwards I used TextWrangler an excellent tool on
+the Mac :D . I'm sure you can find an alternative if need me (it's Mac
+only)
+
+The function call PlaySoundFile can't be lowercase else it will not run.
+
+In Step 5 add ".MPQ" to end of the folder that gets extracted from each
+MPQ EG "lichking" folder becomes "lichking.MPQ" and "common-2" becomes
+"common-2.MPQ" . This is to make things easier in step 6
+
+To assist with step 9 filter on the dot. Most every useful file will
+have a file extension this will pull all those out.
