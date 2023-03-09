@@ -7,4 +7,5 @@ In your`<WoW Install Folder>` you have / can create a folder named `Sound`. If y
 ### Installation
 - Extract your downloaded zip-file.
 - Copy/move the files from `<Download Location>/CAWS-XXX/Sound` to `<WoW Install Folder>/Sound`.
+
 *If you have already existing files in the `Sound` folder, back them up beforehand in case you might overwrite them and don't want to lose them!*
